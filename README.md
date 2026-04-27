@@ -1,5 +1,5 @@
 # CRUD01
-Assigment fro web
+Assigment fOR web
 
  Movies REST API (Node.js - No Express)
 
@@ -184,17 +184,5 @@ http://localhost:3000
 * PUT → `/movies/1`
 * DELETE → `/movies/1`
 
-Notes
 
-* Data is stored in `movies.json`
-* No database used (file-based system)
-* Built using only Node.js core modules
-* Suitable for learning REST API basics
-
- Learning Outcomes
-
-* Understanding HTTP methods (GET, POST, PUT, DELETE)
-* Handling routing in Node.js without Express
-* File read/write operations
-* Building a full CRUD API from scratch
 
