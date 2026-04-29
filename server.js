@@ -20,13 +20,13 @@ const server = http.createServer((req, res) => {
 
     res.setHeader("Content-Type", "application/json");
 
-    // GET ALL MOVIES
+    
     if (req.method === "GET" && req.url === "/movies") {
         const movies = readData();
         res.end(JSON.stringify(movies));
     }
 
-    // GET MOVIE BY ID
+    
     else if (req.method === "GET" && req.url.startsWith("/movies/")) {
         const id = parseInt(req.url.split("/")[2]);
         const movies = readData();
@@ -41,7 +41,7 @@ const server = http.createServer((req, res) => {
         }
     }
 
-    // CREATE MOVIE (POST)
+   
     else if (req.method === "POST" && req.url === "/movies") {
 
         let body = "";
@@ -67,7 +67,7 @@ const server = http.createServer((req, res) => {
         });
     }
 
-    // UPDATE MOVIE (PUT)
+    
     else if (req.method === "PUT" && req.url.startsWith("/movies/")) {
 
         const id = parseInt(req.url.split("/")[2]);
@@ -100,7 +100,7 @@ const server = http.createServer((req, res) => {
         });
     }
 
-    // DELETE MOVIE (STEP 7 ADDED HERE)
+    
     else if (req.method === "DELETE" && req.url.startsWith("/movies/")) {
 
         const id = parseInt(req.url.split("/")[2]);
